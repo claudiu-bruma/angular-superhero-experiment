@@ -1,0 +1,15 @@
+img.card-image{
+    
+}
+.div-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} 
+.mat-card {
+    max-width: 200px;
+    margin: 7px;
+}
+.mat-card-content{
+    overflow: hidden;
+}

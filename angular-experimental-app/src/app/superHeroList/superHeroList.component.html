@@ -1,0 +1,22 @@
+ <div class="div-container">
+        <ng-container *ngFor="let hero of superheroes"  > 
+            
+
+           
+            <mat-card *ngIf="hero" (click) = "openDialog(hero.id)">
+                <mat-card-header>
+                    <mat-card-title>
+                     {{hero.name}}
+                    </mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <img mat-card-image 
+                        src="{{hero.url}}" 
+                        alt="{{hero.name}}" 
+                        class="card-image"/>
+                </mat-card-content>
+
+            </mat-card>
+ 
+        </ng-container >
+     </div>   

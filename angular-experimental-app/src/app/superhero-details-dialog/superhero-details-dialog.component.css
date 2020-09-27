@@ -1,0 +1,15 @@
+.div-image-container{
+    width:65%;
+}
+.div-stats-container{
+    width:25%;
+}
+.div-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} 
+img.card-image{
+    max-width: 450px;
+    max-height: 80%;
+}

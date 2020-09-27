@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Superhero Store</span>
+    <span class="spacer"></span>
+    <mat-form-field class="example-form-field"> 
+        <input matInput type="text" [(ngModel)]="searchValue"  (change)="search()" placeholder="Search by name...">
+        <button mat-button  matSuffix mat-icon-button aria-label="Search" (click)="search()">
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>   
+  </mat-toolbar>
+  <app-super-hero-list #heroList></app-super-hero-list>
+<!-- <router-outlet></router-outlet> -->    
